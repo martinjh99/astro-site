@@ -1,0 +1,6 @@
+body {
+        background: linear-gradient(to right, rgb(43, 43, 100) 1%,black 20%) repeat;
+        color: white;
+        min-height: 100vh;
+        padding: 30px;
+}
