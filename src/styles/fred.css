@@ -1,0 +1,28 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #f4d06f;
+  background: #011c27;
+}
+
+.message {
+  text-align: center;
+  line-height: normal;
+  width: 660px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  background-color: #03254e;
+  border: 2px solid #ff8811;
+  color: #f4d06f;
+  font-size: 30px;
+}
+
+center {
+  margin: 40px 0;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 26px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
