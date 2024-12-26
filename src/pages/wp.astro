@@ -1,0 +1,13 @@
+---
+const res = await fetch("http://mjhooper.co.uk/wp-json/wp/v2/pages/");
+const posts = await res.json();
+import Layout from '../layouts/Base.astro'
+---
+<Layout title="Astro and Wordpress!">
+{
+  posts.map((post) => (
+      <a href={post.link}>{post.title.rendered}</a><br/>
+    
+    ))
+
+</Layout>
