@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Base.astro'
 import { Debug } from 'astro:components';
-const apicall = await fetch ('https://www.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=${api}&format=json&nojsoncallback=1&auth_token=72157720937541174-bfc1c688cfe7c471&api_sig=e54a7fee0a8a58c4c41794a351c06c59');
+const apicall = await fetch ('https://www.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=9478806f5d0d360d3ea81dbd85e0d90a&user_id=83528065%40N00&format=json&nojsoncallback=1');
 const results = await apicall.json();
 ---
 <Layout title="Flickr Photosets">
