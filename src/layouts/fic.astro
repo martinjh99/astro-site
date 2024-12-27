@@ -1,8 +1,9 @@
 ---
 import '../styles/style.css';
 import Header from '../components/header.astro';
-import Footer from '../components/footer.astro';
 import Menu from '../components/menu.astro';
+
+
 const {title} = Astro.props;
 
 ---
@@ -18,8 +19,7 @@ const {title} = Astro.props;
 	<body>
 		<Header>{title}</Header>
 		<Menu />
-		    <slot/>
-        <Footer/>
+		<slot/>
 	</body>
 </html>
 

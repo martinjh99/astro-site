@@ -2,7 +2,6 @@ body {
         background: linear-gradient(to right, rgb(23,100,23) 1%,black 20%) repeat;
         color: white;
         min-height: 100vh;
-        padding: 0px;
 }
 
 .menu {
@@ -15,9 +14,9 @@ body {
 
 .textright {
         margin-left: 250px;
-        margin-right: 0px;
-        margin-top: 0px;
-        padding:30px;        
+        margin-right: 50px;
+        margin-top: 10px;
+
 }
 
 a {
@@ -29,3 +28,11 @@ a {
        color:red;
        text-decoration: underline;
      }
+
+.footerpadding {
+        padding-top: 60px;
+}
+
+.para {
+        margin-bottom: 25px;
+}

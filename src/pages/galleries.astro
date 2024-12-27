@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Base.astro'
+import { Debug } from 'astro:components';
+const apicall = await fetch ('https://www.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=${api}&format=json&nojsoncallback=1&auth_token=72157720937541174-bfc1c688cfe7c471&api_sig=e54a7fee0a8a58c4c41794a351c06c59');
+const results = await apicall.json();
+---
+<Layout title="Flickr Photosets">
+<div class="p-3 grid grid-cols-3 gap-4">
+         {results.photosets.photoset.map((item) => (
+         <div>
+         <a href={`https://www.flickr.com/photos/martinjh/albums/${item.id}`}>{item.title._content}</a></div>
+         ))}
+</div>
+<!-- <Debug {results.photosets.photoset[0]}/> -->
+</Layout>
