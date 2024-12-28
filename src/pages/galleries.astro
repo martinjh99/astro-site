@@ -1,8 +1,10 @@
 ---
 import Layout from '../layouts/Base.astro'
 import { Debug } from 'astro:components';
-const apicall = await fetch ('https://www.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=9478806f5d0d360d3ea81dbd85e0d90a&user_id=83528065%40N00&format=json&nojsoncallback=1');
+import {PUBLIC_FLICKR_API_KEY} from 'astro:env/client'
+const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=${PUBLIC_FLICKR_API_KEY}&user_id=83528065%40N00&format=json&nojsoncallback=1`)
 const results = await apicall.json();
+
 ---
 <Layout title="Flickr Photosets">
 <div class="p-3 grid grid-cols-3 gap-4">
@@ -11,5 +13,5 @@ const results = await apicall.json();
          <a href={`https://www.flickr.com/photos/martinjh/albums/${item.id}`}>{item.title._content}</a></div>
          ))}
 </div>
-<!-- <Debug {results.photosets.photoset[0]}/> -->
+
 </Layout>
