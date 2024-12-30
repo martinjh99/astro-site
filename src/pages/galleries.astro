@@ -4,14 +4,13 @@ import { Debug } from 'astro:components';
 import {PUBLIC_FLICKR_API_KEY} from 'astro:env/client'
 const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=${PUBLIC_FLICKR_API_KEY}&user_id=83528065%40N00&format=json&nojsoncallback=1`)
 const results = await apicall.json();
-
 ---
 <Layout title="Flickr Photosets">
-<div class="p-3 grid grid-cols-3 gap-4">
+<div class="p-3 grid grid-cols-3 gap-2">
          {results.photosets.photoset.map((item) => (
          <div>
-         <a href={`https://www.flickr.com/photos/martinjh/albums/${item.id}`}>{item.title._content}</a></div>
+         <a href={`https://www.flickr.com/photos/martinjh/albums/${item.id}`}>{item.title._content}</a>({item.count_photos}) </div>
          ))}
 </div>
-
 </Layout>
+ 
