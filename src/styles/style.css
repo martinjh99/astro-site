@@ -31,12 +31,19 @@ a {
 
 .footerpadding {
         padding-top: 60px;
+        
 }
 
 .para {
         margin-bottom: 25px;
 }
 
-.hidden{
-        display: none;
+.para2{
+        padding-bottom: 40px;
+}
+
+.me {
+        float: right;
+        padding: 20px;
+
 }

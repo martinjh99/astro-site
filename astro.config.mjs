@@ -5,22 +5,29 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
+  build: {
+    format: 'file',
+  },
   integrations: [tailwind()],
   env:{
     schema:{
-      PUBLIC_FLICKR_API_KEY: envField.string({
+      // Flickr related API calls
+      API: envField.string({
         context: "client",access: "public"
       }),
-      PUBLIC_PHOTOSET1: envField.string({
+      PHOTOSET1: envField.string({
         context: "client",access: "public"
       }),
-      PUBLIC_PHOTOSET2: envField.string({
+      PHOTOSET2: envField.string({
         context: "client",access: "public"
       }),
-      PUBLIC_EXTRAS: envField.string({
+      PHOTOSET3: envField.string({
+        context:"client",access: "public"
+      }),
+      EXTRAS: envField.string({
         context: "client",access: "public"
       }),
-      
+    
     }
   }
 });

@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Base.astro'
-import {PUBLIC_FLICKR_API_KEY,PUBLIC_PHOTOSET1,PUBLIC_PHOTOSET2,PUBLIC_EXTRAS} from 'astro:env/client'
-const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${PUBLIC_FLICKR_API_KEY}&photoset_id=${PUBLIC_PHOTOSET1}&user_id=83528065%40N00&extras=${PUBLIC_EXTRAS}&format=json&nojsoncallback=1`)
+import {API,PHOTOSET2,EXTRAS} from 'astro:env/client'
+const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${API}&photoset_id=${PHOTOSET2}&user_id=83528065%40N00&extras=${EXTRAS}&format=json&nojsoncallback=1`)
 const results = await apicall.json();
 ---
 <Layout title={results.photoset.title}>
