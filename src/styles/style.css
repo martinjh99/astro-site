@@ -36,3 +36,7 @@ a {
 .para {
         margin-bottom: 25px;
 }
+
+.hidden{
+        display: none;
+}
