@@ -47,3 +47,28 @@ a {
         padding: 20px;
 
 }
+
+/* //Menubar Classes */
+
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: sticky;
+        top: 0px;
+      }
+      
+li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 7px 7px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+li a:hover 
+{
+        background-color: #111;
+      }
