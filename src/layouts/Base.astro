@@ -1,28 +1,24 @@
 ---
-import '@fontsource/ovo';
-import '../styles/style.css';
-import Header from '../components/header.astro';
-import Footer from '../components/footer.astro';
-import Menu from '../components/menu.astro';
-
-
+import '@fontsource-variable/alegreya';
+import '../styles/global.css';
+import Nav from '../components/navbar2.astro';
 const {title,subtitle} = Astro.props;
-
 ---
-
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<Header title={title} subtitle={subtitle}/>
-		<Menu/>
-		    <slot/>
-        <Footer/>
+	<body><div class="content">
+		<Nav/>
+		<h1 class="text-center text-4xl p-3">{title}</h1>
+		<div class="text-center text-2xl">{subtitle}</div>
+		<slot />
+	</div>
 	</body>
 </html>
 

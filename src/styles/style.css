@@ -5,15 +5,8 @@ body {
         font-family: 'Ovo', serif;
 }
 
- .menu {
-        float:left;
-        margin-top: 10px;
-        top: 0px;
-        left:20px;
-        width: 230px;
-}
 
-.textright {
+.content {
         margin-left: 250px;
         margin-right: 50px;
         margin-top: 10px;
@@ -39,34 +32,3 @@ body {
         padding: 20px;
 
 }
-
-/* Menubar Classes */
-
-ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        position: sticky;
-        top: 0px;
-      }
-      
-li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 7px 7px;
-        text-decoration: none;
-      }
-      
-      
-li a:hover 
-{
-        background-color: darkseagreen;
-        color:black;
-
-      }
- 
-.hidden {
-        display: none;
-      }
