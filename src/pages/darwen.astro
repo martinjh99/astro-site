@@ -9,6 +9,7 @@ const results = await apicall.json();
         {results.photoset.photo.map((pic) => (
             <div>
             <a href=`${pic.url_o}`><img src=`${pic.url_m}`></a>
+            {pic.title}
             </div>
         )
     )}
