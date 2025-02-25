@@ -49,7 +49,7 @@ jobs:
         with:
              registry: ${{ env.REGISTRY}}
              username: ${{ secrets.DH_USER }}
-             password: ${{ secrets.DH_TOKEN }}
+             password: ${{ secrets.DH_SECRET }}
 
       - name: "Build and push image tags"
         uses: "docker/build-push-action@v5"
