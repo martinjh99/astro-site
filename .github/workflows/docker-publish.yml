@@ -26,13 +26,6 @@ jobs:
       contents: read
       packages: write
     
-    env:
-      API = 9c4705483e45c6537df2bdef605accc6
-      PHOTOSET1 = 72177720306855750
-      PHOTOSET2 = 72157648431164970
-      PHOTOSET3 = 72157634910210219
-      EXTRAS = url_m,url_o
-  
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
