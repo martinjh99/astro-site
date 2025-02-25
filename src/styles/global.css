@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+body {
+    
+    /* background-color: #002200; 
+    color:white;*/
+    background: linear-gradient(to right, rgb(23,80,23) 1%,black 10%) repeat;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Montserrat', serif; 
+
+}
+
+.menu {
+  text-align: center;
+}
+
+menu.astronav-dropdown{
+  position: relative;
+}
+
+div.astronav-dropdown{
+  position: absolute;
+  background-color: #000000;
+  border: 1px solid #00aa00;
+  top: calc(100% + 2px);
+}
+
+.menu ul{ 
+    padding: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+
+
+
+ .menu li {
+    display: inline-block;
+    padding: .5em;
+}
+
+li a:hover,ul a:hover,button:hover{
+  background-color: #00a600;
+  
+}
+
+.content
+  {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+
+.hidden {
+    display:none;
+}
+
+.para {
+  margin-bottom: 25px;
+}
+
+
+.me {
+  float: right;
+  padding: 20px;
+}
+
+.table-align{
+  margin-top: 50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+table{
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   fill="none"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="21.9"
+       y1="69.320182"
+       x2="106.1"
+       y2="69.320182"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="7.703125"
+     inkscape:cx="64"
+     inkscape:cy="64"
+     inkscape:window-width="2560"
+     inkscape:window-height="1219"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 50.4,78.370183 a 75.1,75.1 0 0 0 -28.5,6.9 l 24.2,-65.7 c 0.7,-2 1.9,-3.2 3.4,-3.2 h 29 c 1.5,0 2.7,1.2 3.4,3.2 l 24.2,65.7 c 0,0 -11.6,-7 -28.5,-7 l -10.6,-32.9 c -0.4,-1.7 -1.6,-2.8 -2.9,-2.8 -1.3,0 -2.5,1.1 -2.9,2.7 z M 49.3,106.57018 Z M 45.1,86.370183 c -2,6.6 -0.6,15.799997 4.2,20.199997 a 17.5,17.5 0 0 1 0.2,-0.7 5.5,5.5 0 0 1 5.7,-4.5 c 2.8,0.1 4.3,1.5 4.7,4.7 0.2,1.1 0.2,2.3 0.2,3.5 v 0.4 c 0,2.7 0.7,5.2 2.2,7.4 a 13,13 0 0 0 5.7,4.9 v -0.3 l -0.2,-0.3 c -1.8,-5.6 -0.5,-9.5 4.4,-12.8 l 1.5,-1 a 73,73 0 0 0 3.2,-2.2 16,16 0 0 0 6.8,-11.399997 c 0.3,-2 0.1,-4 -0.6,-6 l -0.8,0.6 -1.6,1 a 37,37 0 0 1 -22.4,2.7 c -5,-0.7 -9.7,-2 -13.2,-6.2 z"
+     id="path1"
+     style="fill:url(#linearGradient2)" />
+  <style
+     id="style1">
+        path { fill: #000; }
+        @media (prefers-color-scheme: dark) {
+            path { fill: #FFF; }
+        }
+    </style>
+</svg>

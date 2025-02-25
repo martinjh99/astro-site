@@ -1,0 +1,20 @@
+---
+import {
+  Astronav,
+  MenuItems,
+/*   MenuIcon,
+  Dropdown,
+  DropdownItems,
+  DropdownSubmenu, */
+} from "astro-navbar";
+
+import Dropdowns from "./dropdown.astro";
+---
+<Astronav>
+      <MenuItems>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <Dropdowns/>
+        </ul>        
+      </MenuItems>
+</Astronav>

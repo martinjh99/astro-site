@@ -1,0 +1,31 @@
+---
+import { Astronav,MenuItems,MenuIcon,Dropdown,DropdownItems,DropdownSubmenu} from "astro-navbar";
+---
+<li><Dropdown class="text-center">
+    <button class="rounded-lg bg-green-900 p-1">
+      <span class="text-center">Galleries</span>
+   </button>
+    <DropdownItems class="relative w-32">
+      <ul class="menu">
+        <li><a href="/raf_museum.html">RAF Museum</a></li><br/>
+        <li><a href="/elr.html">East Lancs Railway</a></li><br/>
+        <li><a href="/darwen.html">Darwen Tower Walk</a></li>
+      </ul>
+    </DropdownItems>
+</Dropdown> </li>
+
+<li><Dropdown class="text-center">
+  <button class="rounded-lg bg-green-900 p-1">
+    <span class="text-center">Fanfic</span>
+ </button>
+  <DropdownItems class="w-50">
+    <ul class="menu">
+      <li><a href="/fics/download.html">Downloadable versions</a></li>
+      <li><a href="/fics/cyclops.html">Xena and the Cyclops</a></li>
+      <li><a href="/fics/fam.html">Family Trouble</a></li><br/>
+      <li><a href="/fics/dragon.html">Xena and the Dragon</a></li>
+      <li><a href="/fics/howimet.html">How I met Xena</a></li>
+    </ul>
+  </DropdownItems>
+</Dropdown>
+</li>
