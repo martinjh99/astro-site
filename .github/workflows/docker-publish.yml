@@ -54,3 +54,5 @@ jobs:
           target_registry_username: ${{ github.actor }}
           target_registry_password: ${{ secrets.GITHUB_TOKEN }}
           publish: true
+          tag_with_ref: true 
+          
