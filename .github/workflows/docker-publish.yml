@@ -14,7 +14,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REPOSITORY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: martinjh99/astro-site
+  IMAGE_NAME: astro-site
 
 jobs:
   build:
