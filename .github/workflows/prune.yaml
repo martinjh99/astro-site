@@ -1,0 +1,30 @@
+name: Prune all untagged packages
+
+on:
+    - workflow_dispatch
+
+jobs:
+    prune:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            packages: write
+
+    
+        steps:
+        - name: Login
+          uses: "docker/login-action@3.3.0"
+          with:
+            registry: ghcr.io
+            username: ${{github.actor}}
+            password: ${{secrets.GITHUB_TOKEN}}
+
+        - name: Prune
+          uses: vlaurin/action-ghcr-prune@v0.6.0
+          with:
+              token: ${{ secrets.GITHUB_TOKEN }}
+              user: martinjh99
+              container: astro-site/astro-site
+              dry-run: true # Dry-run first, then change to `false`
+              prune-tags-regexes: |
+                ^sha-
