@@ -47,8 +47,8 @@ jobs:
         id: meta
         uses:  docker/metadata-action@v5
         with:
-          images: |
-           martinjh99/astro-site
+          #images: |
+          # astro-site
           tags: |
            type=sha
       
