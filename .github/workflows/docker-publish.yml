@@ -56,6 +56,7 @@ jobs:
         run: |
          echo ${{ steps.meta.outputs.tags}}
          echo ${{ env.IMAGE_NAME}}
+         echo ${{ github.repository }}
 
       - name: Login
         uses: docker/login-action@v3.3.0
