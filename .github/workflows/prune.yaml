@@ -26,5 +26,5 @@ jobs:
               user: martinjh99
               container: astro-site/astro-site
               dry-run: true # Dry-run first, then change to `false`
-              prune-tags-regexes: |
-                ^sha256:
+              prune-untagged: true
+              
