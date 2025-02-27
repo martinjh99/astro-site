@@ -14,8 +14,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REPOSITORY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
-
+  IMAGE_NAME: martinjh99/astro-site
 
 jobs:
   build:
@@ -55,6 +54,10 @@ jobs:
         env:
             DOCKER_METADATA_SHORT_SHA_LENGTH: 4
       
+      - name: Echo out tags
+        run: echo ${{ steps.meta.outputs.tags}}    
+            
+
       - name: Login
         uses: docker/login-action@v3.3.0
         with:
