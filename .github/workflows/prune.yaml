@@ -20,7 +20,7 @@ jobs:
             password: ${{secrets.GITHUB_TOKEN}}
 
         - name: Delete Old Tagged Packages
-          uses: emmahsax/action-ghcr-prune@main
+          uses: daltonv/action-ghcr-prune@0.1.0
           with:
               container: astro-site
               dry-run: true
@@ -37,7 +37,7 @@ jobs:
           # After the first step finishes, then go through and delete all other untagged packages
           # UNLESS they are a part of a multi-arch image that is left around from the first step.
         - name: Delete Old Untagged Packages Stage 2
-          uses: emmahsax/action-ghcr-prune@main
+          uses: daltonv/action-ghcr-prune@v0.1.0
           with:
               container: astro-site
               dry-run: true
