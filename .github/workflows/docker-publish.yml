@@ -60,7 +60,7 @@ jobs:
         with:
              registry: ${{ env.REPOSITORY}}
              username: ${{ vars.DH_USER }}
-             password: ${{ secrets.GHCR_PASS}}
+             password: ${{ secrets.GITHUB_TOKEN}}
 
 
       - name: "Build and push image tags"
