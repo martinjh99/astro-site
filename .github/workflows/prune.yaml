@@ -28,7 +28,7 @@ jobs:
               keep-tags-regexes: |
                 ^latest$
                 ^sha-$
-              organization: ${{ github.repository_owner }}
+              user: martinjh99
               prune-tags-regexes: |
                 .+
               remove-multi-platform: true
@@ -42,6 +42,6 @@ jobs:
               container: astro-site/astro-site
               dry-run: true
               keep-last: 0
-              organization: ${{ github.repository_owner }}
+              user: martinjh99
               prune-untagged: true
               token: ${{ secrets.GITHUB_TOKEN }}
