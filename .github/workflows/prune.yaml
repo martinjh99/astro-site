@@ -19,29 +19,8 @@ jobs:
             username: ${{github.actor}}
             password: ${{secrets.GITHUB_TOKEN}}
 
-        - name: Delete Old Tagged Packages
-          uses: daltonv/action-ghcr-prune@v0.1.0
+        - name: Prune Containers
+          uses: "lannonbr/prune-containers-action@1.0.1"
           with:
-              container: astro-site
-              dry-run: true
-              keep-last: 5
-              keep-tags-regexes: |
-                ^latest$
-                ^sha-$
-              user: martinjh99
-              prune-tags-regexes: |
-                .+
-              remove-multi-platform: true
-              token: ${{ secrets.GITHUB_TOKEN }}
-    
-          # After the first step finishes, then go through and delete all other untagged packages
-          # UNLESS they are a part of a multi-arch image that is left around from the first step.
-        - name: Delete Old Untagged Packages Stage 2
-          uses: daltonv/action-ghcr-prune@v0.1.0
-          with:
-              container: astro-site
-              dry-run: true
-              keep-last: 0
-              user: martinjh99
-              prune-untagged: true
-              token: ${{ secrets.GITHUB_TOKEN }}
+            container-name: "astro-site/astro-site"
+            
