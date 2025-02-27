@@ -54,8 +54,8 @@ jobs:
       
       - name: Echo out tags
         run: |
-         echo "${{ github.repository }}/${{ env.IMAGE_NAME}}:latest"
-         echo "${{ github.repository }}/${{ env.IMAGE_NAME}}:${{ steps.meta.outputs.tags }}"
+         echo "${{ env.IMAGE_NAME}}:latest"
+         echo "${{ env.IMAGE_NAME}}:${{ steps.meta.outputs.tags }}"
 
       - name: Login
         uses: docker/login-action@v3.3.0
