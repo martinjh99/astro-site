@@ -23,4 +23,5 @@ jobs:
           uses: "lannonbr/prune-containers-action@1.0.1"
           with:
             container-name: "astro-site/astro-site"
-            
+          env:
+            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
