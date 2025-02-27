@@ -10,11 +10,11 @@ on:
     branches: [ "main" ]
 
   
-#env:
+env:
   # Use docker.io for Docker Hub if empty
-  #REPOSITORY: docker.io
+  REPOSITORY: docker.io
   # github.repository as <account>/<repo>
-  #IMAGE_NAME: astro-site
+  IMAGE_NAME: astro-site
 
 jobs:
   build:
@@ -48,7 +48,7 @@ jobs:
         uses:  docker/metadata-action@v5
         with:
           images: |
-           astro-site
+           martinjh99/astro-site
           tags: |
            type=sha
       
