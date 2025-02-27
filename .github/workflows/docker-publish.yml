@@ -47,11 +47,11 @@ jobs:
         id: meta
         uses:  docker/metadata-action@v5
         with:
-          #images: |
-          # astro-site
           tags: |
            type=sha
-      
+        env:
+          DOCKER_METADATA_SHORT_SHA_LENGTH: 4
+           
       - name: Echo out tags
         run: |
          echo "${{ github.repository }}:latest"
@@ -62,7 +62,7 @@ jobs:
         with:
              registry: ${{ env.REPOSITORY}}
              username: ${{ vars.DH_USER }}
-             password: ${{ secrets.GITHUB_TOKEN}}
+             password: ${{ secrets.DH_PAT}}
 
       - name: "Build and push image tags"
         uses: "docker/build-push-action@v5"
