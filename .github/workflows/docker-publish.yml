@@ -51,11 +51,11 @@ jobs:
            type=sha
         env:
           DOCKER_METADATA_SHORT_SHA_LENGTH: 4
-           
-      - name: Echo out tags
+      - name: Echo Vars
         run: |
-         echo "${{ github.repository }}:latest"
-         echo "${{ github.repository }}:${{ steps.meta.outputs.tags }}"
+             echo "registry: ${{ env.REPOSITORY}}"
+             echo username: "${{ vars.DH_USER }}"
+             echo password: "${{ secrets.DH_PAT}}"
 
       - name: Login
         uses: docker/login-action@v3.3.0
