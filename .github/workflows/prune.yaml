@@ -20,7 +20,7 @@ jobs:
             password: ${{secrets.GITHUB_TOKEN}}
 
         - name: Delete Old Tagged Packages
-          uses: daltonv/action-ghcr-prune@0.1.0
+          uses: daltonv/action-ghcr-prune@v0.1.0
           with:
               container: astro-site
               dry-run: true
