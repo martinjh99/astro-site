@@ -22,7 +22,7 @@ jobs:
         - name: Delete Old Tagged Packages
           uses: emmahsax/action-ghcr-prune@main
           with:
-              container: ${{ github.event.repository.name }}
+              container: astro-site/astro-site
               dry-run: true
               keep-last: 5
               keep-tags-regexes: |
@@ -36,7 +36,7 @@ jobs:
     
           # After the first step finishes, then go through and delete all other untagged packages
           # UNLESS they are a part of a multi-arch image that is left around from the first step.
-        - name: Delete Old Untagged Packages
+        - name: Delete Old Untagged Packages Stage 2
           uses: emmahsax/action-ghcr-prune@main
           with:
               container: astro-site/astro-site
