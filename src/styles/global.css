@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
+
 body {
-    
     /* background-color: #002200; 
     color:white;*/
     background: linear-gradient(to right, rgb(23,80,23) 1%,black 10%) repeat;
@@ -47,9 +47,9 @@ li a:hover,ul a:hover,button:hover{
 }
 
 .content
-  {
-    margin-left: 50px;
-    margin-right: 50px;
+{ 
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 10px;
   }
 
@@ -76,3 +76,4 @@ li a:hover,ul a:hover,button:hover{
 table{
   text-align: center;
 }
+
