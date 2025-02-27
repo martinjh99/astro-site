@@ -48,13 +48,14 @@ jobs:
         uses:  docker/metadata-action@v5
         with:
           images: |
-           martinjh99/astro-site
+           astro-site
           tags: |
            type=sha
       
       - name: Echo out tags
         run: |
          echo ${{ steps.meta.outputs.tags}}
+         echo ${{ env.IMAGE_NAME}}
 
       - name: Login
         uses: docker/login-action@v3.3.0
