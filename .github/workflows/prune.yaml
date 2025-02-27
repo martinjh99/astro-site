@@ -22,7 +22,7 @@ jobs:
         - name: Delete Old Tagged Packages
           uses: emmahsax/action-ghcr-prune@main
           with:
-              container: astro-site/astro-site
+              container: astro-site
               dry-run: true
               keep-last: 5
               keep-tags-regexes: |
@@ -39,7 +39,7 @@ jobs:
         - name: Delete Old Untagged Packages Stage 2
           uses: emmahsax/action-ghcr-prune@main
           with:
-              container: astro-site/astro-site
+              container: astro-site
               dry-run: true
               keep-last: 0
               user: martinjh99
