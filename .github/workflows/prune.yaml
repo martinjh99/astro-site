@@ -25,6 +25,5 @@ jobs:
               token: ${{ secrets.GITHUB_TOKEN }}
               user: martinjh99
               container: astro-site/astro-site
-              dry-run: true # Dry-run first, then change to `false`
+              dry-run: false # Dry-run first, then change to `false`
               prune-untagged: true
-              
