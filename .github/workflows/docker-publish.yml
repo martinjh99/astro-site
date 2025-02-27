@@ -58,8 +58,8 @@ jobs:
       - name: Login
         uses: docker/login-action@v3.3.0
         with:
-             registry: ${{ env.REGISTRY}}
-             username: ${{ secrets.DH_USER }}
+             registry: ${{ env.REPOSITORY}}
+             username: ${{ vars.DH_USER }}
              password: ${{ secrets.DH_SECRET }}
 
       - name: "Build and push image tags"
