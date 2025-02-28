@@ -1,5 +1,3 @@
-FROM nginx:latest
-LABEL Maintainer="Martin Hooper"
-LABEL Desc="Test ghcr actions"
+FROM nginx:alpine
 COPY dist /usr/share/nginx/html
 

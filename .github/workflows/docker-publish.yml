@@ -14,7 +14,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REPOSITORY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: astro-site
+  IMAGE_NAME: mywebsite
 
 jobs:
   build:
@@ -40,6 +40,11 @@ jobs:
     # Node.js version to install
           node-version: 22
 
+
+      - name: Create env file
+        run: |
+              touch .env
+                  echo "${{secrets.FLICKRAPI}}" >> .env
       - name: Run Build
         run: npm run build
 
