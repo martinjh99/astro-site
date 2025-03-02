@@ -1,0 +1,6 @@
+services:
+    website_test:
+        ports:
+            - 8001:80
+        container_name: website
+        image: ghcr.io/martinjh99/astro-site/mywebsite:latest
