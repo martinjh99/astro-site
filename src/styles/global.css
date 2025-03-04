@@ -103,3 +103,10 @@ mycard {
   transform: translate(-50%, -50%);
   box-shadow:#069619 5px 5px 10px;
 }
+photo {
+  
+  color: white;
+  border-radius: 1em;
+  padding: 2em;
+  box-shadow:#069619 5px 5px 10px;
+}
