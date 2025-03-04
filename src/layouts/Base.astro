@@ -1,6 +1,8 @@
 ---
 import Nav from '../components/navbar2.astro';
+import Footer from '../components/footer.astro';
 import '../styles/global.css';
+import type { ACTION_ERROR_CODES } from 'astro:actions';
 const {title,subtitle} = Astro.props;
 ---
 <!doctype html>
@@ -22,6 +24,7 @@ const {title,subtitle} = Astro.props;
 		<h1 class="text-center text-4xl p-3">{title}</h1>
 		<div class="content text-2xl text-center pb-4" set:html={subtitle} />
 		<slot />
+		
 	</div>
 	</body>
 </html>
