@@ -82,9 +82,6 @@ tr,td,th{
   border:2px solid #069619;
 }
 
-
-
-
 mycard {
   width:800px;
   color: white;
@@ -95,11 +92,13 @@ mycard {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  box-shadow:#069619 5px 5px 10px;
+  box-shadow:#069619 3px 5px 10px;
+  border: 3px solid #006600
 }
 photo {
   color: white;
   border-radius: 1em;
   padding: 2em;
-  box-shadow:#069619 5px 5px 5px;
+  box-shadow:#069619 5px 5px 5ps 5ps 1px; 
+  border: 2px solid #069619;
 }
