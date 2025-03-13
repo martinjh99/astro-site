@@ -10,17 +10,12 @@ const {title,subtitle} = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	
-
 		<title>{title}</title>
 	</head>
 	<body><div class="content">
 		<Nav/>
 		<h1 class="text-center text-4xl p-3">{title}</h1>
-		<div class="content text-2xl text-center pb-4" set:html={subtitle} />
+		<h2 class="text-2xl text-center pb-4" set:html={subtitle} />
 		<slot />
 		
 	</div>
