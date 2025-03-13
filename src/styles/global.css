@@ -1,3 +1,5 @@
+@import '@fontsource-variable/montserrat'; 
+@import '@fontsource/saira-stencil-one';
 @import "tailwindcss";
 
 
@@ -7,8 +9,13 @@ body {
     background: linear-gradient(to right, rgb(23,80,23) 1%,black 10%) repeat;
     color: white;
     min-height: 100vh;
-    font-family: 'Montserrat', serif; 
+    font-family: 'Montserrat Variable', serif; 
 
+}
+
+h1{
+  font-family: 'Saira Stencil One', system-ui;
+  font-size:  48px;
 }
 
 .menu {
