@@ -93,16 +93,15 @@ tr,td,th{
 }
 
 mycard {
-  width:800px;
+  
   color: white;
   border-radius: 2em;
   padding: 2em;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  box-shadow:#069619 3px 5px 10px;
+  top:   150px;
+  left: 390px;
+  width: 600px;
+  margin: auto;
   border: 3px solid #006600
 }
 photo {
