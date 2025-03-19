@@ -93,7 +93,6 @@ tr,td,th{
 }
 
 mycard {
-  
   color: white;
   border-radius: 2em;
   padding: 2em;
@@ -102,7 +101,6 @@ mycard {
   left: 390px;
   width: 600px;
   margin: auto;
-  
 }
 
 photo {

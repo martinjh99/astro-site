@@ -1,6 +1,12 @@
 services:
-    website_test:
+    website:
         ports:
             - 8001:80
         container_name: website
         image: ghcr.io/martinjh99/astro-site/mywebsite:latest
+        networks:
+          - npm_default
+networks:
+   npm_default:
+      external: true
+
