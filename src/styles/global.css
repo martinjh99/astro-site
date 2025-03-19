@@ -102,8 +102,9 @@ mycard {
   left: 390px;
   width: 600px;
   margin: auto;
-  border: 3px solid #006600
+  
 }
+
 photo {
   color: white;
   border-radius: 1em;
