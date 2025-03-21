@@ -42,6 +42,7 @@ div.astronav-dropdown{
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+    z-index: 1;
   }
 
 
@@ -97,7 +98,7 @@ mycard {
   border-radius: 2em;
   padding: 2em;
   position: absolute;
-  top:   150px;
+  top:   250px;
   left: 390px;
   width: 600px;
   margin: auto;
