@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Base.astro'
-import { Debug } from 'astro:components';
 import {API,PHOTOSET4,EXTRAS} from 'astro:env/client'
 const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${API}&photoset_id=${PHOTOSET4}&user_id=83528065%40N00&extras=${EXTRAS}&format=json&nojsoncallback=1`)
 const results = await apicall.json();
