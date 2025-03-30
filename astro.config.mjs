@@ -28,7 +28,7 @@ export default defineConfig({
       PHOTOSET3: envField.string({
         context:"client",access: "public"
       }),
-      PHHOTOSET4: envField.string({
+      PHOTOSET4: envField.string({
         context: "client", access: "public"
       }),
       EXTRAS: envField.string({
