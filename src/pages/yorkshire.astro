@@ -6,7 +6,7 @@ const results = await apicall.json();
 ---
 <Layout title={results.photoset.title}>
 <div class="grid grid-cols-3 gap-2">
-        {results.photoset.photo.map((pic) => (
+        {results.photoset.photo.map((pic: { url_o: any; url_m: any; }) => (
             <photo>
                 <a href=`${pic.url_o}`><img src=`${pic.url_m}`></a>
             </photo>

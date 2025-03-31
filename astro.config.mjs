@@ -32,7 +32,7 @@ export default defineConfig({
         context: "client", access: "public"
       }),
       PHOTOSET5: envField.string({
-        context: "client",access: "public"
+        context: "client", access: "public"
       }),
       EXTRAS: envField.string({
         context: "client",access: "public"
