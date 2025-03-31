@@ -63,7 +63,14 @@ li a:hover,ul a:hover,button:hover{
     margin-right: 100px;
     margin-top: 10px;
   }
-
+  
+  .content2
+  { 
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 10px;
+    }
+  
 .hidden {
     display:none;
 }
@@ -95,13 +102,8 @@ tr,td,th{
 
 mycard {
   color: white;
-  border-radius: 2em;
-  padding: 2em;
-  position: absolute;
-  top:   350px;
-  left: 390px;
-  width: 600px;
-  margin: auto;
+  background:#330000;
+  padding: 4em;
 }
 
 photo {
