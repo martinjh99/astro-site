@@ -1,17 +1,20 @@
 ---
+
+import { Debug } from 'astro:components';
 import Layout from '../../layouts/Base.astro'
 import {API,PHOTOSET5,EXTRAS} from 'astro:env/client'
 
 export async function getStaticPaths ({paginate}) {
 const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${API}&photoset_id=${PHOTOSET5}&user_id=83528065%40N00&extras=${EXTRAS}&format=json&nojsoncallback=1`)
 const results = await apicall.json();
-return paginate(results,{pageSize:6})
+return paginate(results,{pageSize:6});
 }
-const {page} = Astro.props;
-console.log {page};
+const { page } = Astro.props;
+
 ---
 <Layout title={page.data.photoset.title}>
-<div class="grid grid-cols-3 gap-2">
+<Debug page/>
+    <div class="grid grid-cols-3 gap-2">
         {page.data.photoset.photo.map((pic: { url_o: any; url_m: any; }) => (
             <photo>
                 <a href={pic.url_o}><img src={pic.url_m}></a>
