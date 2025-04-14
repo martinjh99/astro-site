@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Base.astro'
+import {API,PHOTOSET5,EXTRAS} from 'astro:env/client'
+
+export async function getStaticPaths ({paginate}) {
+const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${API}&photoset_id=${PHOTOSET5}&user_id=83528065%40N00&extras=${EXTRAS}&format=json&nojsoncallback=1`)
+const results = await apicall.json();
+return paginate(results,{pageSize:6})
+}
+const {page} = Astro.props;
+console.log {page};
+---
+<Layout title={page.data.photoset.title}>
+<div class="grid grid-cols-3 gap-2">
+        {page.data.photoset.photo.map((pic: { url_o: any; url_m: any; }) => (
+            <photo>
+                <a href={pic.url_o}><img src={pic.url_m}></a>
+            </photo>
+        )
+    )}
+</div>
+	<div class="flex gap-5 justify-center">
+		{page.url.prev ? <a class="p-3 rounded-md bg-slate-500 text-white" href={page.url.prev}>Previous</a> : <span class="text-gray-500 p-3 rounded-md block bg-gray-300">Previous</span>}
+		{page.url.next ? <a class="p-3 rounded-md bg-slate-500 text-white" href={page.url.next}>Next</a> : <span class="text-gray-500 p-3 rounded-md block bg-gray-300">Next</span>}
+
+	</div>
+
+</Layout>
