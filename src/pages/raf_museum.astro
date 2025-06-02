@@ -6,7 +6,7 @@ const apicall= await fetch(`https://www.flickr.com/services/rest/?method=flickr.
 const results = await apicall.json();
 ---
 <Layout title={results.photoset.title}>
-<div class="grid grid-cols-3 gap-2">
+<div class="grid sm:grid-cols-1 lg:grid-cols-3 lg:gap-2">
         {results.photoset.photo.map((pic) => (
             <photo>
                 <a href=`${pic.url_o}`><img src=`${pic.url_m}`></a>

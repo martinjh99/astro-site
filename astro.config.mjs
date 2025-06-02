@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig,envField } from 'astro/config';
+import { defineConfig,envField,fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 
@@ -9,6 +9,14 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  experimental: {
+    fonts: [{
+      provider: fontProviders.google(),
+      name: "Baloo 2",
+      cssVariable: "--font-Baloo"
+  }]
+},
 
   env: {
     schema:{
