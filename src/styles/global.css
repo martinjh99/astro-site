@@ -109,20 +109,16 @@ mycard {
 
 photo {
   color: white;
-  //padding: 0.75em;
-  columns: 3 400px;
-  column-gap: 20px;
-  column-rule: 3px #069619;
+  padding: 0.75em;
 }
 .content-small
 { 
     margin-left: 0px;
-    margin-right: 0px;
+    
     
   }
 
 .container{
-  columns: 3 400px;
-  column-gap: 20px;
-  column-rule: 3px #069619;
-}
+  columns: 3;
+  }
+
