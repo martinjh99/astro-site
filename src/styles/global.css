@@ -7,7 +7,7 @@ body {
     background: linear-gradient(to right, rgb(23,80,23) 1%,black 10%) repeat;
     color: white;
     min-height: 100vh;
-    font-size: 15px;
+    font-size: 25px;
     font-family:var(--font-Baloo);
 
 }
@@ -30,9 +30,10 @@ menu.astronav-dropdown{
 
 div.astronav-dropdown{
   position: absolute;
-  background-color: #000000;
+  background-color: black;
   border: 1px solid #00aa00;
   top: calc(100% + 2px);
+  
 }
 
 .menu ul{ 
