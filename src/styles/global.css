@@ -119,6 +119,6 @@ photo {
   }
 
 .container{
-  columns: 3;
+  columns: 3 500px;
   }
 
