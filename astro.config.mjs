@@ -10,13 +10,12 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  experimental: {
+
     fonts: [{
       provider: fontProviders.google(),
       name: "Baloo 2",
       cssVariable: "--font-Baloo"
-  }]
-},
+  }],
 
   env: {
     schema:{
