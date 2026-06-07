@@ -6,3 +6,4 @@ This is my new website built using the Astro website generator.
 
 http://astro.build 
  
+added this line to get the sute to build!
