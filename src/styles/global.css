@@ -2,7 +2,7 @@
 
 
 body {
-    background: linear-gradient(to right, rgb(23,80,23) 1%,black 10%) repeat;
+    background: linear-gradient(to right, rgb(23,80,23) 1% ,black 10%) repeat;
     color: white;
     min-height: 100vh;
     font-size: 25px;
