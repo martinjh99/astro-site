@@ -6,8 +6,6 @@ dist/
 # dependencies
 node_modules/
 
-# file to indicate update script to run 
-.updateme 
 
 # logs
 npm-debug.log*
